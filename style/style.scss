@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-$bg-deep-blue: rgb(45, 64, 117);
+
 
 @mixin pad {
   @media (max-width: 768px) {
@@ -22,6 +22,56 @@ $bg-deep-blue: rgb(45, 64, 117);
   border-left: 1px solid rgb(255, 255, 255);
 }
 
+// 通用 ===============================================================================
+
+$bg-deep-blue: rgb(45, 64, 117);
+
+.deep-blue {
+  background-color: $bg-deep-blue;
+}
+
+.z-index-100 {
+  z-index: -100;
+}
+
+.transition-05 {
+  transition: 0.5s ease-in-out;
+}
+
+.h-450{
+  height: 450px;
+}
+
+
+@media (max-width: 768px){
+  .w-md-100{
+    width: 100%;
+  }
+  .h-md-75{
+    height: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .w-lg-50{
+    width: 50%;
+  }
+  
+}
+.bd-left{
+  border-left: 3px solid rgb(255, 255, 255);
+    -webkit-filter: opacity(80%); /* Safari */
+    filter: opacity(80%);
+}
+
+.bd-right{
+  border-right: 3px solid rgb(255, 255, 255);
+  -webkit-filter: opacity(80%); /* Safari */
+  filter: opacity(80%);
+}
+
+
+
+
 
 
 
@@ -33,19 +83,13 @@ $bg-deep-blue: rgb(45, 64, 117);
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-.z-index-100 {
-  z-index: -100;
-}
 
 
 
-.deep-blue {
-  background-color: $bg-deep-blue;
-}
-.transition-02 {
-  transition: 0.2s ease-in-out;
-}
 
+
+
+// index home-story-list========================================================================
 .home-story {
   ul {
     li {
@@ -94,14 +138,11 @@ $bg-deep-blue: rgb(45, 64, 117);
     display: none;
   }
 }
-.mt-20pa {
-  margin-top: 20%;
-}
 
 
 
 
-// 前後鍵
+// carousel 前後鍵======================================================================
 
 .la-carousel-control-prev,
 .la-carousel-control-next {
@@ -188,7 +229,7 @@ $bg-deep-blue: rgb(45, 64, 117);
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 30%;
-  height: 5px;
+  height: 15px;
   padding: 0;
   // margin-right: 3px;
   // margin-left: 3px;
@@ -273,6 +314,10 @@ $bg-deep-blue: rgb(45, 64, 117);
   object-fit: contain;
 }
 
+
+
+
+
 // 控制card zoomin 效果
 // ------------------------------------------------------------------
 .zoomin{
@@ -286,8 +331,8 @@ $bg-deep-blue: rgb(45, 64, 117);
   }
 }
 img{
-  -webkit-filter: opacity(90%); /* Safari */
-    filter: opacity(90%);
+  // -webkit-filter: opacity(90%); /* Safari */
+  //   filter: opacity(90%);
   transition: 0.5s ease-in-out;
 }
 // -------------------------------------------------------------------
@@ -311,6 +356,23 @@ img{
   border-bottom: 2px solid $bg-deep-blue ;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// header 控制項
 // ---------------------------------------------------------------------
 .headroom {
   position:fixed;
@@ -326,23 +388,27 @@ img{
   position: relative;
 } 
 
-
-.h-450{
-  height: 450px;
+// -----------------------------------------------------------------------
+// headroom效果
+#example {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
-
-
-@media (max-width: 768px){
-  .w-md-100{
-    width: 100%;
+.logo--not--top{
+  display: none;
+}
+.nav-item{
+  transition:color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
+  &:hover{
+    background-color: $bg-deep-blue;
+    transition:color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
   }
 }
-@media (min-width: 992px) {
-  .w-lg-50{
-    width: 50%;
-  }
-  
-}
+
+
+
 
 
 
@@ -370,13 +436,6 @@ img{
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 button {
   background: transparent;
@@ -562,21 +621,4 @@ button {
 
 
 
-// -----------------------------------------------------------------------
-// headroom效果
-#example {
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-}
-.logo--not--top{
-  display: none;
-}
-.nav-item{
-  transition:color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
-  &:hover{
-    background-color: $bg-deep-blue;
-    transition:color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
-  }
-}
+

@@ -9,24 +9,51 @@
   border-left: 1px solid rgb(255, 255, 255);
 }
 
-.dropdown-menu li:hover .sub-menu {
-  visibility: visible;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
+.deep-blue {
+  background-color: rgb(45, 64, 117);
 }
 
 .z-index-100 {
   z-index: -100;
 }
 
-.deep-blue {
-  background-color: rgb(45, 64, 117);
+.transition-05 {
+  transition: 0.5s ease-in-out;
 }
 
-.transition-02 {
-  transition: 0.2s ease-in-out;
+.h-450 {
+  height: 450px;
+}
+
+@media (max-width: 768px) {
+  .w-md-100 {
+    width: 100%;
+  }
+  .h-md-75 {
+    height: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .w-lg-50 {
+    width: 50%;
+  }
+}
+.bd-left {
+  border-left: 3px solid rgb(255, 255, 255); /* Safari */
+  filter: opacity(80%);
+}
+
+.bd-right {
+  border-right: 3px solid rgb(255, 255, 255); /* Safari */
+  filter: opacity(80%);
+}
+
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .home-story ul li {
@@ -73,10 +100,6 @@
   .color-space {
     display: none;
   }
-}
-
-.mt-20pa {
-  margin-top: 20%;
 }
 
 .la-carousel-control-prev,
@@ -157,7 +180,7 @@
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 30%;
-  height: 5px;
+  height: 15px;
   padding: 0;
   text-indent: -999px;
   cursor: pointer;
@@ -234,8 +257,7 @@
   transform: scale(1.1);
 }
 
-img { /* Safari */
-  filter: opacity(90%);
+img {
   transition: 0.5s ease-in-out;
 }
 
@@ -273,30 +295,27 @@ img { /* Safari */
   position: relative;
 }
 
-.h-450 {
-  height: 450px;
+#example {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 768px) {
-  .w-md-100 {
-    width: 100%;
-  }
+.logo--not--top {
+  display: none;
 }
-@media (min-width: 992px) {
-  .w-lg-50 {
-    width: 50%;
-  }
+
+.nav-item {
+  transition: color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
 }
+.nav-item:hover {
+  background-color: rgb(45, 64, 117);
+  transition: color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
+}
+
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 button {
   background: transparent;
   border: none;
@@ -463,23 +482,4 @@ button {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 8px;
-}
-
-#example {
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-}
-
-.logo--not--top {
-  display: none;
-}
-
-.nav-item {
-  transition: color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
-}
-.nav-item:hover {
-  background-color: rgb(45, 64, 117);
-  transition: color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
