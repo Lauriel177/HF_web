@@ -1,0 +1,355 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../bootstrap.css" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <title>鴻福電纜工程</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- nav -->
+    <div id="example" class="container-fluid navbar navbar-expand-lg p-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img id="logo1" src="https://www.hon-fu.com.tw/wp-content/themes/innovext/images/logo.svg" class="px-3"
+            href="./index.html" alt="">
+          <img id="logo2" src="https://www.hon-fu.com.tw/wp-content/themes/innovext/images/logo-mobile.svg" class="px-3"
+            href="./index.html" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- lg下的畫面 -->
+        <div class="offcanvas offcanvas-end ">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="./page2.html">關於鴻福電纜</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page3.html">工程實績</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page5.html">主要設備</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./page4.html" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                服務項目
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="./page4.html">土木技術</a></li>
+                <li><a class="dropdown-item" href="./page4.html">核心機電</a></li>
+                <li>
+                  <a class="dropdown-item" href="./page4.html">電信傳輸</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page6.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+        <!-- md 下的側邊header -->
+        <div class="offcanvas offcanvas-end deep-blue la-offcanvas navbar-toggler h-100" aria-expanded="true"
+          id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+          <button aria-expanded="true" type="button" class=" m-5 navbar-toggler btn-close text-reset"
+            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 w-100 p-5">
+            <li class="nav-item p-2 text-start border-bottom">
+              <a class="nav-link" aria-current="page" href="./page2.html">關於鴻福電纜</a>
+            </li>
+            <li class="nav-item p-2 text-start border-bottom">
+              <a class="nav-link" href="./page3.html">工程實績</a>
+            </li>
+            <li class="nav-item p-2 text-start border-bottom">
+              <a class="nav-link" href="./page5.html">主要設備</a>
+            </li>
+            <li class="nav-item p-2 text-start dropdown border-bottom">
+              <a class="nav-link dropdown-toggle" href="./page4.html" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                服務項目
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item p-2 text-end" href="./page4.html">土木技術</a></li>
+                <li><a class="dropdown-item p-2 text-end" href="./page4.html">核心機電</a></li>
+                <li>
+                  <a class="dropdown-item p-2 text-end" href="./page4.html">電信傳輸</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item p-2 text-start border-bottom">
+              <a class="nav-link" href="./page6.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 輪播 -->
+    <div class="container-fluid h-100 w-100 ">
+      <!-- <div class="carousel carousel-dark slide h-100 w-100 bg-black" data-bs-ride="carousel"> -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!-- indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <!-- inner -->
+        <div class="carousel-inner h-100 w-100">
+          <div class="carousel-item h-100 w-100 active" data-bs-interval="10000">
+            <img src="https://s3.ap-northeast-1.amazonaws.com/hon-fu.com.tw/wp-content/uploads/2020/12/img_banner_1.jpg"
+              class="d-block h-100 w-100 obj-fit" alt="..." />
+            <div class="carousel-caption-a d-md-block animate__animated animate__fadeInDown">
+              <h5 class="hero-h5">用心服務</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+              <button type="button" class="btn btn-outline-secondary w-25 py-3 px-2 mt-5">
+                了解更多
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item h-100 w-100" data-bs-interval="2000">
+            <img src="https://s3.ap-northeast-1.amazonaws.com/hon-fu.com.tw/wp-content/uploads/2020/12/img_banner_2.jpg"
+              class="d-block h-100 w-100 obj-fit" alt="..." />
+            <div class="carousel-caption-a carousel-caption-right d-md-block animate__animated animate__fadeInDown">
+              <h5 class="hero-h5">優良品質</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+              <button type="button" class="btn btn-outline-secondary w-25 py-3 px-2 mt-5">
+                了解更多
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item h-100 w-100">
+            <img src="https://s3.ap-northeast-1.amazonaws.com/hon-fu.com.tw/wp-content/uploads/2020/12/img_banner_3.jpg"
+              class="d-block h-100 w-100 obj-fit" alt="..." />
+            <div class="carousel-caption-a animate__animated animate__fadeInDown d-md-block">
+              <h5 class="hero-h5">積極態度</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+              <button type="button" class="btn btn-outline-secondary w-25 py-3 px-2 mt-5">
+                了解更多
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ,, -->
+    <div class="container-fluid bg-light p-5 d-flex align-items-center justify-content-center">
+      <div class="w-75 text-center">
+        <p class="fs-5 animate__animated animate__fadeInRight pb-5">
+          宏福電纜擁有最高標準的電纜工程技術，我們致力於提供最完整的規畫設計、施工、監造、驗收及維護服務，給予客戶最完善的解決方案。
+        </p>
+        <button type="button" class="btn btn-outline-primary w-25 py-3 px-2">
+          了解更多
+        </button>
+      </div>
+    </div>
+    <!-- home-story -->
+    <div class="container-fluid position-relative h-100 d-flex align-items-center z-index-100">
+      <div class="d-lg-flex w-100 d-md-block pb-5">
+        <div class="d-block w-100">
+          <img class="d-flex align-items-center w-100 obj-fit animate__animated animate__fadeInLeft"
+            src="https://s3.ap-northeast-1.amazonaws.com/hon-fu.com.tw/wp-content/uploads/2020/12/img_home_about.jpg"
+            alt="" />
+        </div>
+        <div class="container-fluid p-5 d-flex align-items-center">
+          <div class="w-100">
+            <h6>OUR STORY</h6>
+            <h4>優秀的精英團隊</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+              quae libero laborum recusandae. Doloremque, hic corporis
+              expedita quidem itaque atque.
+            </p>
+            <div class="container text-center mt-5">
+              <button type="button" class="btn btn-outline-primary w-25 py-3 px-2">
+                了解更多
+              </button>
+            </div>
+
+            <div class="color-space"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- home-story-list -->
+    <div class="container-fluid h-250 deep-blue p-5">
+      <div class="w-100 d-md-block d-lg-flex h-250">
+        <div class="d-flex w-100 align-items-center">
+          <div class="w-100 p-5 home-story color-white">
+            <h6>SERVICE</h6>
+            <h3>服務項目</h3>
+            <ul>
+              <li class="my-5 mx-3 p-2 text-center deep-blue transition-02">
+                <a href="https://www.hon-fu.com.tw/service/underground-pipeline/">土木工程</a>
+              </li>
+              <li class="my-5 mx-3 p-2 text-center deep-blue transition-02">
+                <a href="https://www.hon-fu.com.tw/service/underground-pipeline/">核心機電</a>
+              </li>
+              <li class="my-5 mx-3 p-2 text-center deep-blue transition-02">
+                <a href="https://www.hon-fu.com.tw/service/underground-pipeline/">電信傳輸</a>
+              </li>
+            </ul>
+            <div class="container text-center">
+              <button type="button" class="btn btn-outline-secondary w-25 py-3 px-2">
+                了解更多
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <div class="d-block w-100">
+          <img class="d-flex align-items-center w-100 obj-fit"
+            src="https://s3.ap-northeast-1.amazonaws.com/hon-fu.com.tw/wp-content/uploads/2020/12/img_home_service.jpg"
+            alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- title -->
+    <div class="container-fluid">
+      <div class="d-flex w-100">
+        <div class="w-100 p-5">
+          <h6>SERVICE</h6>
+          <h3>服務項目</h3>
+        </div>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="container-fluid mb-5 pb-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- 點點 -->
+        <div class="la-carousel-indicators deep-blue">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <!-- 內部 -->
+        <div class="la-carousel-inner carousel-inner">
+          <div class="la-carousel-item carousel-item active p-4">
+            <img
+              src="https://s3.ap-northeast-1.amazonaws.com/hon-fu.com.tw/wp-content/uploads/2021/04/%E6%B1%A1%E6%B0%B4%E4%B8%8B%E6%B0%B4%E9%81%93%E7%B3%BB%E7%B5%B1%E7%AE%A1%E7%B7%9A%E5%B7%A5%E7%A8%8B%E7%AC%AC%E4%B8%80%E6%9C%9F%E7%AC%AC6A%E6%A8%99-2048x1155.jpg"
+              class="w-50 h-100 obj-fit float-start" alt="..." />
+            <div class="w-50 h-100 float-end py-5">
+              <h5 class="p-2 w-25 text-center deep-blue mt-5 color-white">土木技術</h5>
+              <h3 class="h-50 p-5 color-deep-blue mt-5 bg-light">進民間參與桃園縣桃園地區污水下水道系統建設之興建、營運、移轉計畫(BOT)-污水下水道系統管線工程第一期(第6A標)</h3>
+              <div class="container text-center pt-5">
+                <button type="button" class="btn btn-outline-primary w-25 py-3 px-2">
+                  了解更多
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="la-carousel-item carousel-item p-4">
+            <img
+              src="https://s3.ap-northeast-1.amazonaws.com/hon-fu.com.tw/wp-content/uploads/2020/12/%E9%95%B7%E6%A6%AE%E8%88%AA%E5%A4%AA%E7%B6%AD%E4%BF%AE%E6%A9%9F%E5%9D%AA%E9%9D%9E%E7%A0%B4%E5%A3%9E%E6%AA%A2%E6%B8%AC-1024x768.jpg"
+              class="w-50 h-100 obj-fit float-lg-start" alt="..." />
+              <div class="w-50 h-100 float-lg-end py-5">
+                <h5 class="p-2 w-25 text-center deep-blue mt-5 color-white">土木技術</h5>
+                <h3 class="h-50 p-5 color-deep-blue mt-5 bg-light">立榮航空台南機場岸電設備機電安裝</h3>
+                <div class="container text-center pt-5 ">
+                  <button type="button" class="btn btn-outline-primary w-25 py-3 px-2">
+                    了解更多
+                  </button>
+                </div>
+              </div>
+          </div>
+          <div class="la-carousel-item carousel-item p-4">
+            <img
+              src="https://s3.ap-northeast-1.amazonaws.com/hon-fu.com.tw/wp-content/uploads/2020/10/%E9%95%B7%E6%A6%AE%E8%88%AA%E5%A4%AA%E7%B6%AD%E4%BF%AE%E6%A3%9A%E6%A9%9F%E5%B0%BE%E6%9E%B6%E6%A9%9F%E9%9B%BB%E5%AE%89%E8%A3%9D-1-1024x576.jpg"
+              class="w-50 h-100 obj-fit float-lg-start" alt="..." />
+              <div class="w-50 h-100 float-lg-end py-5">
+                <h5 class="p-2 w-25 text-center deep-blue mt-5 color-white">土木技術</h5>
+                <h3 class="h-50 p-5 color-deep-blue mt-5 bg-light">長榮航太-維修停機機坪非破壞性檢測</h3>
+                <div class="container text-center pt-5">
+                  <button type="button" class="btn btn-outline-primary w-25 py-3 px-2">
+                    了解更多
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- 往前往後 -->
+        <button class="la-carousel-control-prev d-none d-lg-block" type="button"
+          data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <img src="../img/circle-arrow-left-solid.svg" class="w-25">
+          <!-- <span class="carousel-control-prev-icon la-carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <!-- <span class="visually-hidden">Previous</span> -->
+        </button>
+        <button class="la-carousel-control-next d-none d-lg-block" type="button"
+          data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <img src="../img/circle-arrow-right-solid.svg" class="w-25">
+          <!-- <span class="carousel-control-next-icon la-carousel-control-next-icon" aria-hidden="true"></span> -->
+          <!-- <span class="visually-hidden">Next</span> -->
+        </button>
+      </div>
+    </div>
+    <!-- 是否有業務上的需求 -->
+    <div class="container-fluid h-50" style="background-color: rgb(45, 64, 117)">
+      <div class="row justify-content-center h-100">
+        <div class="col-11 col-md-8 col-xl-6 h-100 d-flex align-items-center justify-content-center">
+          <div class="justify-content-center text-center">
+            <h6 style="font-size: 32px; color: #fff">是否有業務上的需求</h6>
+            <button type="button" class="btn btn-outline-secondary w-75 py-3 px-2 mt-5">
+              了解更多
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="row row-cols-3 py-5 border-top d-flex justify-content-center bg-dark">
+      <div class="col-lg-6 w-50">
+        <ul class="footer-ul justify-content-around d-lg-flex d-md-block align-content-lg-center h-100">
+          <li class="footer-li p-lg-4 py-md-2 py-sm-2 py-1 color-white">
+            <a href="" class=""> 關於宏福電纜 </a>
+          </li>
+          <li class="footer-li p-lg-4 py-md-2 py-sm-2 py-1">
+            <a href="" class=""> 工程實績 </a>
+          </li>
+          <li class="footer-li p-lg-4 py-md-2 py-sm-2 py-1">
+            <a href="" class=""> 服務項目 </a>
+          </li>
+          <li class="footer-li p-lg-4 py-md-2 py-sm-2 py-1">
+            <a href="" class=""> 聯絡我們 </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="col text-end color-white">
+          <p>+886-2-2608-2689</p>
+          <p>service@honfu.com.tw</p>
+          <p>新北市林口區文化二路一段266號4樓之1</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Headroom.js v0.9.4 -->
+  <script src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="../bootstrap.bundle.js"></script>
+  <script src="../js.js"></script>
+  <script src="/jquery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bd-left {
+  border-left: 1px solid rgb(255, 255, 255);
+}
+
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.z-index-100 {
+  z-index: -100;
+}
+
+.deep-blue {
+  background-color: rgb(45, 64, 117);
+}
+
+.transition-02 {
+  transition: 0.2s ease-in-out;
+}
+
+.home-story ul li {
+  list-style-type: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.home-story ul li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.home-story ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.footer-ul {
+  list-style-type: none;
+}
+.footer-ul .footer-li {
+  transition: 0.2s ease-in-out;
+}
+.footer-ul .footer-li:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.footer-ul .footer-li a {
+  text-decoration: none;
+  color: rgb(103, 98, 98);
+  transition: 0.2s ease-in-out;
+}
+
+.color-space {
+  position: absolute;
+  top: 35%;
+  bottom: 0;
+  right: 50%;
+  left: 0;
+  z-index: -50;
+  background-color: rgb(45, 64, 117);
+}
+@media (max-width: 768px) {
+  .color-space {
+    display: none;
+  }
+}
+
+.mt-20pa {
+  margin-top: 20%;
+}
+
+.la-carousel-control-prev,
+.la-carousel-control-next {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  padding: 0;
+  color: rgb(45, 64, 117);
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .la-carousel-control-prev,
+.la-carousel-control-next {
+    transition: none;
+  }
+}
+.la-carousel-control-prev:hover,
+.la-carousel-control-prev:focus,
+.la-carousel-control-next:hover,
+.la-carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.la-carousel-control-prev {
+  left: 0;
+}
+
+.la-carousel-control-next {
+  right: 0;
+}
+
+.la-carousel-control-prev-icon,
+.la-carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.la-carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.la-carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.la-carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -6%;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 10%;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+  list-style: none;
+}
+
+.la-carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30%;
+  height: 5px;
+  padding: 0;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .la-carousel-indicators [data-bs-target] {
+    transition: none;
+  }
+}
+.la-carousel-indicators .active {
+  opacity: 1;
+}
+
+.la-carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.la-carousel-inner::after {
+  display: flex;
+  clear: both;
+  content: "";
+}
+
+.la-carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .la-carousel-item {
+    transition: none;
+  }
+}
+.la-carousel-item.active,
+.la-carousel-item-next,
+.la-carousel-item-prev {
+  display: block;
+}
+
+.obj-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.obj-fit-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.zoomin {
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.zoomin:hover img { /* Safari */
+  filter: opacity(100%);
+  transition: 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+img { /* Safari */
+  filter: opacity(90%);
+  transition: 0.5s ease-in-out;
+}
+
+.buttom-50pa {
+  bottom: 50%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-deep-blue {
+  color: rgb(45, 64, 117);
+}
+
+.buttom-underline {
+  border-bottom: 2px solid rgb(45, 64, 117);
+}
+
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.scrollspy-example {
+  height: 1200px;
+  overflow: auto;
+  position: relative;
+}
+
+.h-450 {
+  height: 450px;
+}
+
+@media (max-width: 768px) {
+  .w-md-100 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .w-lg-50 {
+    width: 50%;
+  }
+}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* TIMELINE ARROWS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline .arrows {
+  display: flex;
+  justify-content: left;
+  margin: 20px;
+}
+
+.timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.timeline .disabled {
+  opacity: 0.5;
+}
+
+.timeline .arrows img {
+  width: 45px;
+  height: 45px;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+.timeline ol li {
+    width: auto;
+  }
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+  .timeline ol li div {
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+  .timeline ol li div {
+    position: static;
+  }
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+  .timeline ol li:nth-child(odd) div::before,
+.timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border-left: 1px solid white;
+    height: 25px;
+  }
+  .timeline ol li:last-child,
+.timeline ol li:nth-last-child(2) div::before,
+.timeline ol li:not(:last-child)::after,
+.timeline .arrows {
+    display: none;
+  }
+}
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 50%;
+  height: 3px;
+  background: rgb(45, 64, 117);
+}
+
+.timeline ol li:last-child {
+  width: 800px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: rgb(45, 64, 117);
+  border: 1px solid white;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: white;
+  background: rgb(45, 64, 117);
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: rgb(45, 64, 117) transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent rgb(45, 64, 117);
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#example {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.logo--not--top {
+  display: none;
+}
+
+.nav-item {
+  transition: color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-item:hover {
+  background-color: rgb(45, 64, 117);
+  transition: color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
